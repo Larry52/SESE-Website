@@ -1449,6 +1449,25 @@ html {
 
 .leader-image {
     margin-bottom: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.leader-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.leader-card:hover .leader-image img {
+    transform: scale(1.1);
 }
 
 .leader-image .image-placeholder {
@@ -1478,8 +1497,15 @@ html {
 .leader-role {
     color: #1a1a1a;
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     font-size: 1rem;
+}
+
+.leader-major {
+    color: #666;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    font-style: italic;
 }
 
 .leader-bio {
